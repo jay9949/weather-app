@@ -1,7 +1,9 @@
 import { DateTime } from "luxon";
 
-const API_KEY = "2bf13886cb9d0f54b5b2bf1604d28ead";
+const API_KEY = "bbb1fa89368563807bdf69e6dcd98852";
 const BASE_URL = "https://api.openweathermap.org/data/2.5";
+
+// https://api.openweathermap.org/data/2.5/onecall?lat=48.8534&lon=2.3488&exclude=current,minutely,hourly,alerts&appid=1fa9ff4126d95b8db54f3897a208e91c&units=metric
 
 const getWeatherData = (infoType, searchParams) => {
   const url = new URL(BASE_URL + "/" + infoType);
@@ -41,33 +43,24 @@ const formatCurrentWeather = (data) => {
     speed,
   };
 };
+
 const formatForecastWeather = (data) => {
-  if (!data || !data.timezone || !data.daily || !data.hourly) {
-    // Handle missing or undefined data here
-    return null; // Or handle in a way that fits your application
-  }
-
   let { timezone, daily, hourly } = data;
+  daily = daily.slice(1, 6).map((d) => {
+    return {
+      title: formatToLocalTime(d.dt, timezone, "ccc"),
+      temp: d.temp.day,
+      icon: d.weather[0].icon,
+    };
+  });
 
-  if (Array.isArray(daily) && daily.length >= 6) {
-    daily = daily.slice(1, 6).map((d) => {
-      return {
-        title: formatToLocalTime(d.dt, timezone, "ccc"),
-        temp: d.temp.day,
-        icon: d.weather[0].icon,
-      };
-    });
-  }
-
-  if (Array.isArray(hourly) && hourly.length >= 6) {
-    hourly = hourly.slice(1, 6).map((d) => {
-      return {
-        title: formatToLocalTime(d.dt, timezone, "hh:mm a"),
-        temp: d.temp,
-        icon: d.weather[0].icon,
-      };
-    });
-  }
+  hourly = hourly.slice(1, 6).map((d) => {
+    return {
+      title: formatToLocalTime(d.dt, timezone, "hh:mm a"),
+      temp: d.temp,
+      icon: d.weather[0].icon,
+    };
+  });
 
   return { timezone, daily, hourly };
 };
