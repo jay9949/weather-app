@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# React Js Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**live demo: [https://react-weather-app-six-sigma.vercel.app/](https://react-weather-app-six-sigma.vercel.app/)**
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### Made with ❤️ by [Dulanjali Senarathna](https://www.linkedin.com/in/dulanjali-senarathna/)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Mainly focused on react js front-end development. I used CSS for styling.
 
-### `npm test`
+This weather app has basic weather app functionalities such as viewing current weather details (temperature, humidity, and winds speed), viewing daily weather forecast, viewing the hourly weather forecast, viewing toast messages for the best user experience, viewing weather details of the current location, view current date time, view temperature in celsius and Fahrenheit and sunset/sunrise time, etc.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## What I used
 
-### `npm run build`
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Open Weather Map API](https://openweathermap.org/api)
+- [unicons](iconscout.com)
+- [luxon](https://www.npmjs.com/package/luxon)
+- [React Toast](https://www.npmjs.com/package/react-toastify)
+- More...
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Requirements
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Basic ReactJs knowledge
+- Basic HTML, CSS knowledge
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+After getting the project files, you need to go the file directory and run
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```shell
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+and after that start the dev server.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```shell
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Tools Used
 
-## Learn More
+1. Favicon: [Flaticon.com](https://www.flaticon.com/)
+1. Code Editor: [VS Code](https://code.visualstudio.com/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## FAQ
 
-### Code Splitting
+### Q: What are the prerequisites?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+basics of html, css, javascript and some basic knowledge of react is enough to start this project. Rest you will learn in the tutorial.
 
-### Analyzing the Bundle Size
+### Q: Who the project is for?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The project is for the people who wanna get more skilled in `ReactJs`.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Feedback
 
-### Advanced Configuration
+If you have any feedback, please reach out to us at [Dulanjali Senarathna](https://www.behance.net/dulanjasenarathna)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Happy Coding! 🚀
 
-### Deployment
+# Website's screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![weather app ui](https://github.com/Dulanjali-Senarathna/react-weather-app/assets/59603716/17d6427c-da62-4143-a9ba-b6aa9aa541e2)
+![weather app ui2](https://github.com/Dulanjali-Senarathna/react-weather-app/assets/59603716/68ac659a-0e50-4755-955f-1e5a3f97e5a2)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
