@@ -11,7 +11,7 @@ const Forecast = ({ title, items }) => {
       <div className="flex flex-grow items-center justify-between text-white">
         {items.map((item) => (
           <div className="flex flex-col items-center justify-center">
-            <p className="font-light text-sm" key={item.id}>
+            <p className="font-light text-sm" key={items.id}>
               {item.title}
             </p>
             <img
